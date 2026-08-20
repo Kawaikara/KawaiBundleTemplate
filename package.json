@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.34.0",
   "scripts": {
     "clean": "node scripts/clean.mjs",
     "build": "pnpm clean && tsup && node scripts/package.mjs",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@kawaikara/site-api": "^1.0.0",
+    "@kawaikara/site-api": "https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz",
     "archiver": "^7.0.1",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
