@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "id": "example.video.overlay",
+  "name": "Example Video Overlay",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "main": "Plugin.js"
+}

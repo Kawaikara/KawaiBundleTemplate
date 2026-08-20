@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "example.kawaikara-bundle",
+  "name": "Example Kawaikara Bundle",
+  "description": "A TypeScript Provider with one Provider-scoped Plugin.",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "permissions": ["navigation", "script-injection"],
+  "providers": ["Providers/ExampleVideo"],
+  "plugins": []
+}

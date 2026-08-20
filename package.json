@@ -1,0 +1,17 @@
+{
+  "name": "kawaikara-bundle-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "pnpm clean && tsup && node scripts/package.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@kawaikara/site-api": "^1.0.0",
+    "archiver": "^7.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
