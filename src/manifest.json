@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "example.kawaikara-bundle",
-  "name": "Example Kawaikara Bundle",
-  "description": "A TypeScript Provider with one Provider-scoped Plugin.",
+  "name": "Google PluginView Example",
+  "description": "A Google Provider with several sandboxed PluginView panels.",
   "version": "1.0.0",
   "apiVersion": 1,
-  "permissions": ["navigation", "script-injection"],
-  "providers": ["Providers/ExampleVideo"],
+  "permissions": ["navigation", "plugin-view"],
+  "providers": ["Providers/Google"],
   "plugins": []
 }

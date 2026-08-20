@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@kawaikara/site-api':
-        specifier: https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz
-        version: https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz
+        specifier: https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz
+        version: https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz
       archiver:
         specifier: ^7.0.1
         version: 7.0.1
@@ -196,8 +196,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kawaikara/site-api@https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz':
-    resolution: {integrity: sha512-5xRIzPHkCXF8E/sd5zIce5/EL0Bi5AYkJ2GovDQt3Accf379rUPddV980G45t23kLWyEPX6Php/TENXwLBhxhg==, tarball: https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz}
+  '@kawaikara/site-api@https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz':
+    resolution: {integrity: sha512-EzFBeuunrryZ43oB/rsIsEQsK4Z4/xaf3AdxVPdTJvAR3yo8BheG8RiZy7r+8gh9zZdeE6XuODRNFZLu+TMWMA==, tarball: https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz}
     version: 1.0.0
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
@@ -958,7 +958,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kawaikara/site-api@https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz': {}
+  '@kawaikara/site-api@https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz': {}
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     optional: true

@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@kawaikara/site-api": "https://github.com/fabyday/kawaikara/releases/download/site-api-v1.0.0/kawaikara-site-api-1.0.0.tgz",
+    "@kawaikara/site-api": "https://github.com/Kawaikara/kawai-site-api/releases/download/v1.0.0/kawaikara-site-api-1.0.0.tgz",
     "archiver": "^7.0.1",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"

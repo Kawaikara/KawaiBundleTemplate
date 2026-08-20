@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "example.video.overlay",
-  "name": "Example Video Overlay",
+  "id": "example.google.panel-gallery",
+  "name": "Google Panel Gallery",
   "version": "1.0.0",
   "apiVersion": 1,
   "main": "Plugin.js"

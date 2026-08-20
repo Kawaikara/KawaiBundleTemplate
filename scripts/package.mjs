@@ -4,18 +4,18 @@ import { cp, mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const manifest = JSON.parse(await readFile('src/manifest.json', 'utf8'));
-const providerRoot = 'src/Providers/ExampleVideo';
-const pluginRoot = `${providerRoot}/Plugins/ExampleOverlay`;
+const providerRoot = 'src/Providers/Google';
+const pluginRoot = `${providerRoot}/Plugins/PanelGallery`;
 
-await mkdir('.kawai-stage/Providers/ExampleVideo/Plugins/ExampleOverlay', {
+await mkdir('.kawai-stage/Providers/Google/Plugins/PanelGallery', {
   recursive: true,
 });
 await Promise.all([
   cp('src/manifest.json', '.kawai-stage/manifest.json'),
-  cp(`${providerRoot}/manifest.json`, '.kawai-stage/Providers/ExampleVideo/manifest.json'),
+  cp(`${providerRoot}/manifest.json`, '.kawai-stage/Providers/Google/manifest.json'),
   cp(
     `${pluginRoot}/manifest.json`,
-    '.kawai-stage/Providers/ExampleVideo/Plugins/ExampleOverlay/manifest.json',
+    '.kawai-stage/Providers/Google/Plugins/PanelGallery/manifest.json',
   ),
 ]);
 await mkdir('release', { recursive: true });
