@@ -19,7 +19,7 @@ container, but Kawaikara accepts only the application-specific extension.
 
 Bundle projects import `@kawaikara/site-api`, but the package is not currently
 published to the npm registry. This template pins the prebuilt package attached
-to the immutable `site-api-v1.0.0` GitHub Release. A fresh clone can therefore
+to the immutable `v1.0.0` GitHub Release in `Kawaikara/kawai-site-api`. A fresh clone can therefore
 run `pnpm install` without a sibling Kawaikara checkout, a local `link:` path,
 or a build of the desktop monorepo.
 
