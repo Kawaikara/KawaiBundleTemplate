@@ -4,9 +4,16 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.34.0",
+  "kawaikara": {
+    "development": {
+      "outputDirectory": ".kawaikara/development"
+    }
+  },
   "scripts": {
     "clean": "node scripts/clean.mjs",
     "build": "pnpm clean && tsup && node scripts/package.mjs",
+    "postinstall": "node scripts/sync-schemas.mjs",
+    "schemas:sync": "node scripts/sync-schemas.mjs",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

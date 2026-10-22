@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "sourceDirectory": "src",
+  "entryPoints": [
+    "Providers/Google/Provider.ts",
+    "Providers/Google/Plugins/PanelGallery/Plugin.ts"
+  ],
+  "watch": [
+    "src",
+    "kawaikara.dev.json",
+    "package.json",
+    "tsconfig.json"
+  ]
+}

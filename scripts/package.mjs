@@ -13,6 +13,7 @@ await mkdir('.kawai-stage/Providers/Google/Plugins/PanelGallery', {
 await Promise.all([
   cp('src/manifest.json', '.kawai-stage/manifest.json'),
   cp(`${providerRoot}/manifest.json`, '.kawai-stage/Providers/Google/manifest.json'),
+  cp(`${providerRoot}/locale.json`, '.kawai-stage/Providers/Google/locale.json'),
   cp(
     `${pluginRoot}/manifest.json`,
     '.kawai-stage/Providers/Google/Plugins/PanelGallery/manifest.json',

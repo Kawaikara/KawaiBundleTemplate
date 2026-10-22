@@ -1,0 +1,31 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/kawaikara.dev.json"],
+      "url": "./.kawaikara/schemas/kawaikara-dev.schema.json"
+    },
+    {
+      "fileMatch": ["/package.json"],
+      "url": "./.kawaikara/schemas/kawaikara-package.schema.json"
+    },
+    {
+      "fileMatch": ["/src/manifest.json"],
+      "url": "./.kawaikara/schemas/bundle-manifest.schema.json"
+    },
+    {
+      "fileMatch": ["/src/Providers/*/manifest.json"],
+      "url": "./.kawaikara/schemas/provider-manifest.schema.json"
+    },
+    {
+      "fileMatch": ["/src/Providers/*/locale.json"],
+      "url": "./.kawaikara/schemas/provider-locale.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/src/Providers/*/Plugins/**/manifest.json",
+        "/src/Plugins/**/manifest.json"
+      ],
+      "url": "./.kawaikara/schemas/plugin-manifest.schema.json"
+    }
+  ]
+}

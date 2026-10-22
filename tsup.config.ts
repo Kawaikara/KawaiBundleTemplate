@@ -9,8 +9,8 @@ export default defineConfig({
     'Providers/Google/Plugins/PanelGallery/Plugin':
       'src/Providers/Google/Plugins/PanelGallery/Plugin.ts',
   },
+  external: ['@kawaikara/site-api'],
   format: ['cjs'],
-  noExternal: ['@kawaikara/site-api'],
   outDir: '.kawai-stage',
   outExtension: () => ({ js: '.js' }),
   platform: 'node',

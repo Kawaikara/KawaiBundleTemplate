@@ -3,6 +3,7 @@ import {
   provider,
   type SiteContext,
 } from '@kawaikara/site-api';
+import locale from './locale.json';
 
 const GOOGLE_HELP_DOCUMENT = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
@@ -14,20 +15,27 @@ const GOOGLE_HELP_DOCUMENT = `<!doctype html>
 </style></head><body><main><h1>Google Provider</h1><p>This panel is contributed by the Provider.</p>
 <div class="card">The page behind the menu is a regular isolated Google WebContents.</div></main></body></html>`;
 
+// The manifest owns static discovery metadata. Settings, translated resources,
+// selectors, and other site-specific behavior belong beside this class.
 @provider({
-  address: { hosts: ['google.com'] },
   menu: {
     category: 'Examples',
-    order: 10,
-    panels: [{
-      id: 'provider-help',
-      title: 'Provider',
-      order: 10,
-      content: { kind: 'html', html: GOOGLE_HELP_DOCUMENT },
-    }],
+    panels: [
+      {
+        id: 'provider-help',
+        title: {
+          'en-US': locale['en-US']['menu.panel.provider-help.title'],
+          'ko-KR': locale['ko-KR']['menu.panel.provider-help.title'],
+          'ja-JP': locale['ja-JP']['menu.panel.provider-help.title'],
+        },
+        order: 10,
+        content: {
+          kind: 'html',
+          html: GOOGLE_HELP_DOCUMENT,
+        },
+      },
+    ],
   },
-  permissions: ['navigation', 'plugin-view'],
-  shortcut: { defaultKey: 'CommandOrControl+Alt+G' },
 })
 export default class GoogleProvider extends AbstractProvider {
   constructor(context: SiteContext) {
